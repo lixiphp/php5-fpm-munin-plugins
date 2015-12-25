@@ -4,10 +4,7 @@
 cd /usr/share/munin/plugins
 git clone git://github.com/lixiphp/php5-fpm-munin-plugins.git
 chmod +x php5-fpm-munin-plugins/phpfpm_*
-ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_connections /etc/munin/plugins/phpfpm_connections
-ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_memory /etc/munin/plugins/phpfpm_memory
-ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_status /etc/munin/plugins/phpfpm_status
-ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm_processes /etc/munin/plugins/phpfpm_processes
+ln -s /usr/share/munin/plugins/php5-fpm-munin-plugins/phpfpm* /etc/munin/plugins/
 service munin-node restart
 ```
 
