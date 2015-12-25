@@ -52,6 +52,15 @@ The phpfpm_status plugin is particularly useful if you're using dynamic or on-de
 * env.phpbin: Set a custom php binary name, defaults to _php5-fpm_
 * env.phppool: Set a custom php pool, defaults to www
 
+vi /etc/munin/plugin-conf.d/phpfpm
+
+```
+[phpfpm*]
+env.url http://127.0.0.1:87/php_status
+env.ports 87
+env.phpbin php-fpm
+```
+
 #### Requirements:
 
 libwww-perl
